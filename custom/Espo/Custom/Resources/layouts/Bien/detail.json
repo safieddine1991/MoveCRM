@@ -1,5 +1,11 @@
 [
     {
+        "label": "Photos",
+        "rows": [
+            [{"name": "photos", "fullWidth": true}]
+        ]
+    },
+    {
         "label": "Aperçu",
         "rows": [
             [{"name": "name"}, {"name": "reference"}],
@@ -34,8 +40,7 @@
     {
         "label": "Description",
         "rows": [
-            [{"name": "description"}, false],
-            [{"name": "photos"}, false]
+            [{"name": "description"}, false]
         ]
     }
 ]
