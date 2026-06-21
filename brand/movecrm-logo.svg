@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 96" width="380" height="96">
+  <g fill="none">
+    <!-- house mark -->
+    <g transform="translate(8,16)">
+      <path d="M32 4 L60 26 L60 60 L4 60 L4 26 Z" fill="#4f9d69"/>
+      <path d="M32 4 L60 26 L52 26 L32 12 L12 26 L4 26 Z" fill="#3d7d53"/>
+      <rect x="24" y="38" width="16" height="22" rx="2" fill="#ffffff"/>
+      <circle cx="44" cy="48" r="2.4" fill="#ffffff"/>
+    </g>
+    <!-- wordmark -->
+    <text x="88" y="60" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="-1">
+      <tspan fill="#2b2f36">Move</tspan><tspan fill="#4f9d69">CRM</tspan>
+    </text>
+    <text x="90" y="82" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" letter-spacing="3" fill="#8a9099">CRM IMMOBILIER</text>
+  </g>
+</svg>
