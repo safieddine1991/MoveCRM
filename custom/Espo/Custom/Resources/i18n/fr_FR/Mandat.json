@@ -1,0 +1,42 @@
+{
+    "fields": {
+        "name": "N° de mandat",
+        "mandateType": "Type de mandat",
+        "status": "Statut",
+        "startDate": "Date de début",
+        "endDate": "Date de fin",
+        "commissionRate": "Taux de commission (%)",
+        "commissionAmount": "Montant commission",
+        "description": "Notes",
+        "bien": "Bien",
+        "proprietaire": "Propriétaire",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes",
+        "createdAt": "Créé le",
+        "modifiedAt": "Modifié le",
+        "createdBy": "Créé par",
+        "modifiedBy": "Modifié par"
+    },
+    "links": {
+        "bien": "Bien",
+        "proprietaire": "Propriétaire",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes"
+    },
+    "options": {
+        "mandateType": {
+            "Simple": "Simple",
+            "Exclusif": "Exclusif",
+            "Semi-exclusif": "Semi-exclusif"
+        },
+        "status": {
+            "Actif": "Actif",
+            "Expire": "Expiré",
+            "Resilie": "Résilié",
+            "Termine": "Terminé"
+        }
+    },
+    "labels": {
+        "Create Mandat": "Créer un mandat"
+    }
+}

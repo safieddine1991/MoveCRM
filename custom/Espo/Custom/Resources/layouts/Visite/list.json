@@ -1,0 +1,8 @@
+[
+    {"name": "name", "link": true, "width": 22},
+    {"name": "dateStart", "width": 16},
+    {"name": "status", "width": 12},
+    {"name": "bien", "width": 20},
+    {"name": "acquereur", "width": 18},
+    {"name": "outcome", "width": 12}
+]

@@ -1,0 +1,77 @@
+{
+    "fields": {
+        "name": "Titre / Référence",
+        "reference": "Référence interne",
+        "propertyType": "Type de bien",
+        "transactionType": "Transaction",
+        "status": "Statut",
+        "price": "Prix de vente",
+        "rent": "Loyer mensuel",
+        "charges": "Charges",
+        "fees": "Honoraires agence",
+        "surface": "Surface habitable (m²)",
+        "landSurface": "Surface terrain (m²)",
+        "rooms": "Pièces",
+        "bedrooms": "Chambres",
+        "floor": "Étage",
+        "yearBuilt": "Année de construction",
+        "furnished": "Meublé",
+        "dpe": "DPE (classe énergie)",
+        "ges": "GES (émissions)",
+        "address": "Adresse du bien",
+        "description": "Description",
+        "photos": "Photos",
+        "proprietaire": "Propriétaire",
+        "mandats": "Mandats",
+        "visits": "Visites",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes",
+        "createdAt": "Créé le",
+        "modifiedAt": "Modifié le",
+        "createdBy": "Créé par",
+        "modifiedBy": "Modifié par"
+    },
+    "links": {
+        "proprietaire": "Propriétaire",
+        "mandats": "Mandats",
+        "visits": "Visites",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes"
+    },
+    "options": {
+        "propertyType": {
+            "Appartement": "Appartement",
+            "Maison": "Maison",
+            "Terrain": "Terrain",
+            "Local commercial": "Local commercial",
+            "Immeuble": "Immeuble",
+            "Parking": "Parking / Box",
+            "Bureau": "Bureau",
+            "Autre": "Autre"
+        },
+        "transactionType": {
+            "Vente": "Vente",
+            "Location": "Location"
+        },
+        "status": {
+            "Prospection": "Prospection",
+            "Mandat signe": "Mandat signé",
+            "En vente": "En vente",
+            "Sous compromis": "Sous compromis",
+            "Vendu": "Vendu",
+            "Loue": "Loué",
+            "Retire": "Retiré"
+        },
+        "dpe": {
+            "": "Non renseigné",
+            "Vierge": "Vierge"
+        },
+        "ges": {
+            "": "Non renseigné",
+            "Vierge": "Vierge"
+        }
+    },
+    "labels": {
+        "Create Bien": "Créer un bien"
+    }
+}

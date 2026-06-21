@@ -1,0 +1,14 @@
+{
+    "entity": true,
+    "object": true,
+    "isCustom": true,
+    "customizable": true,
+    "importable": true,
+    "notifications": true,
+    "stream": true,
+    "tab": true,
+    "layouts": true,
+    "acl": true,
+    "aclPortal": true,
+    "type": "Person"
+}

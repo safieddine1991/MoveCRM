@@ -1,0 +1,26 @@
+[
+    {
+        "label": "Acquéreur",
+        "rows": [
+            [{"name": "name"}, {"name": "status"}],
+            [{"name": "phoneNumber"}, {"name": "emailAddress"}],
+            [{"name": "assignedUser"}, false]
+        ]
+    },
+    {
+        "label": "Critères de recherche",
+        "rows": [
+            [{"name": "searchType"}, {"name": "financing"}],
+            [{"name": "budgetMin"}, {"name": "budgetMax"}],
+            [{"name": "surfaceMin"}, {"name": "roomsMin"}],
+            [{"name": "propertyTypes"}, false],
+            [{"name": "sectors"}, false]
+        ]
+    },
+    {
+        "label": "Notes",
+        "rows": [
+            [{"name": "description"}, false]
+        ]
+    }
+]

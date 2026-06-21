@@ -1,0 +1,62 @@
+{
+    "fields": {
+        "name": "Nom",
+        "status": "Statut",
+        "searchType": "Type de recherche",
+        "budgetMin": "Budget min",
+        "budgetMax": "Budget max",
+        "surfaceMin": "Surface min (m²)",
+        "roomsMin": "Pièces min",
+        "propertyTypes": "Types de biens recherchés",
+        "sectors": "Secteurs recherchés",
+        "financing": "Financement",
+        "emailAddress": "Email",
+        "phoneNumber": "Téléphone",
+        "description": "Notes",
+        "visits": "Visites",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes",
+        "createdAt": "Créé le",
+        "modifiedAt": "Modifié le",
+        "createdBy": "Créé par",
+        "modifiedBy": "Modifié par"
+    },
+    "links": {
+        "visits": "Visites",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes"
+    },
+    "options": {
+        "status": {
+            "Nouveau": "Nouveau",
+            "En recherche": "En recherche",
+            "Visite en cours": "Visites en cours",
+            "Offre": "Offre",
+            "Concretise": "Concrétisé",
+            "Inactif": "Inactif"
+        },
+        "searchType": {
+            "Achat": "Achat",
+            "Location": "Location"
+        },
+        "propertyTypes": {
+            "Appartement": "Appartement",
+            "Maison": "Maison",
+            "Terrain": "Terrain",
+            "Local commercial": "Local commercial",
+            "Immeuble": "Immeuble",
+            "Parking": "Parking / Box",
+            "Bureau": "Bureau",
+            "Autre": "Autre"
+        },
+        "financing": {
+            "": "Non renseigné",
+            "Comptant": "Comptant",
+            "Credit": "Crédit",
+            "A valider": "À valider"
+        }
+    },
+    "labels": {
+        "Create Acquereur": "Créer un acquéreur"
+    }
+}

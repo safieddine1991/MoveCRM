@@ -1,0 +1,33 @@
+{
+    "fields": {
+        "name": "Nom / Raison sociale",
+        "personType": "Type",
+        "emailAddress": "Email",
+        "phoneNumber": "Téléphone",
+        "address": "Adresse",
+        "description": "Notes",
+        "biens": "Biens",
+        "mandats": "Mandats",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes",
+        "createdAt": "Créé le",
+        "modifiedAt": "Modifié le",
+        "createdBy": "Créé par",
+        "modifiedBy": "Modifié par"
+    },
+    "links": {
+        "biens": "Biens",
+        "mandats": "Mandats",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes"
+    },
+    "options": {
+        "personType": {
+            "Particulier": "Particulier",
+            "Societe": "Société"
+        }
+    },
+    "labels": {
+        "Create Proprietaire": "Créer un propriétaire"
+    }
+}

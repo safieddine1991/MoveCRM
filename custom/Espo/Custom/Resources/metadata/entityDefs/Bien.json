@@ -1,0 +1,208 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "reference": {
+            "type": "varchar",
+            "maxLength": 50
+        },
+        "propertyType": {
+            "type": "enum",
+            "options": ["Appartement", "Maison", "Terrain", "Local commercial", "Immeuble", "Parking", "Bureau", "Autre"],
+            "default": "Appartement",
+            "audited": true
+        },
+        "transactionType": {
+            "type": "enum",
+            "options": ["Vente", "Location"],
+            "default": "Vente",
+            "audited": true
+        },
+        "status": {
+            "type": "enum",
+            "options": ["Prospection", "Mandat signe", "En vente", "Sous compromis", "Vendu", "Loue", "Retire"],
+            "default": "Prospection",
+            "displayAsLabel": true,
+            "labelType": "state",
+            "style": {
+                "En vente": "primary",
+                "Sous compromis": "warning",
+                "Vendu": "success",
+                "Loue": "success",
+                "Retire": "info"
+            },
+            "audited": true
+        },
+        "price": {
+            "type": "currency",
+            "min": 0,
+            "decimal": false,
+            "audited": true
+        },
+        "rent": {
+            "type": "currency",
+            "min": 0,
+            "decimal": false
+        },
+        "charges": {
+            "type": "currency",
+            "min": 0,
+            "decimal": false
+        },
+        "fees": {
+            "type": "currency",
+            "min": 0,
+            "decimal": false
+        },
+        "surface": {
+            "type": "float",
+            "min": 0
+        },
+        "landSurface": {
+            "type": "float",
+            "min": 0
+        },
+        "rooms": {
+            "type": "int",
+            "min": 0
+        },
+        "bedrooms": {
+            "type": "int",
+            "min": 0
+        },
+        "floor": {
+            "type": "int"
+        },
+        "yearBuilt": {
+            "type": "int",
+            "min": 1700,
+            "max": 2100
+        },
+        "furnished": {
+            "type": "bool"
+        },
+        "dpe": {
+            "type": "enum",
+            "options": ["", "A", "B", "C", "D", "E", "F", "G", "Vierge"],
+            "default": "",
+            "style": {
+                "A": "success",
+                "B": "success",
+                "C": "primary",
+                "D": "primary",
+                "E": "warning",
+                "F": "danger",
+                "G": "danger"
+            }
+        },
+        "ges": {
+            "type": "enum",
+            "options": ["", "A", "B", "C", "D", "E", "F", "G", "Vierge"],
+            "default": ""
+        },
+        "address": {
+            "type": "address"
+        },
+        "description": {
+            "type": "text"
+        },
+        "photos": {
+            "type": "attachmentMultiple",
+            "sourceList": [],
+            "previewSize": "medium"
+        },
+        "proprietaire": {
+            "type": "link"
+        },
+        "mandats": {
+            "type": "linkMultiple",
+            "readOnly": true,
+            "noLoad": true
+        },
+        "visits": {
+            "type": "linkMultiple",
+            "readOnly": true,
+            "noLoad": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "proprietaire": {
+            "type": "belongsTo",
+            "entity": "Proprietaire",
+            "foreign": "biens"
+        },
+        "mandats": {
+            "type": "hasMany",
+            "entity": "Mandat",
+            "foreign": "bien"
+        },
+        "visits": {
+            "type": "hasMany",
+            "entity": "Visite",
+            "foreign": "bien"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "status": {
+            "columns": ["status", "deleted"]
+        },
+        "assignedUser": {
+            "columns": ["assignedUserId", "deleted"]
+        },
+        "createdAt": {
+            "columns": ["createdAt", "deleted"]
+        }
+    }
+}

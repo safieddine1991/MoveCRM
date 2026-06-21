@@ -1,0 +1,7 @@
+[
+    {"name": "name", "link": true, "width": 30},
+    {"name": "personType", "width": 15},
+    {"name": "phoneNumber", "width": 18},
+    {"name": "emailAddress", "width": 22},
+    {"name": "assignedUser", "width": 15}
+]

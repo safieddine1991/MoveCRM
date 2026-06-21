@@ -1,0 +1,102 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "personType": {
+            "type": "enum",
+            "options": ["Particulier", "Societe"],
+            "default": "Particulier"
+        },
+        "emailAddress": {
+            "type": "email"
+        },
+        "phoneNumber": {
+            "type": "phone"
+        },
+        "address": {
+            "type": "address"
+        },
+        "description": {
+            "type": "text"
+        },
+        "biens": {
+            "type": "linkMultiple",
+            "readOnly": true,
+            "noLoad": true
+        },
+        "mandats": {
+            "type": "linkMultiple",
+            "readOnly": true,
+            "noLoad": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "biens": {
+            "type": "hasMany",
+            "entity": "Bien",
+            "foreign": "proprietaire"
+        },
+        "mandats": {
+            "type": "hasMany",
+            "entity": "Mandat",
+            "foreign": "proprietaire"
+        }
+    },
+    "collection": {
+        "orderBy": "name",
+        "order": "asc"
+    },
+    "indexes": {
+        "assignedUser": {
+            "columns": ["assignedUserId", "deleted"]
+        }
+    }
+}

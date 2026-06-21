@@ -1,0 +1,42 @@
+{
+    "fields": {
+        "name": "Intitulé",
+        "status": "Statut",
+        "dateStart": "Date / heure",
+        "dateEnd": "Fin",
+        "outcome": "Suite donnée",
+        "feedback": "Compte rendu",
+        "bien": "Bien",
+        "acquereur": "Acquéreur",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes",
+        "createdAt": "Créé le",
+        "modifiedAt": "Modifié le",
+        "createdBy": "Créé par",
+        "modifiedBy": "Modifié par"
+    },
+    "links": {
+        "bien": "Bien",
+        "acquereur": "Acquéreur",
+        "assignedUser": "Négociateur",
+        "teams": "Équipes"
+    },
+    "options": {
+        "status": {
+            "Planifiee": "Planifiée",
+            "Realisee": "Réalisée",
+            "Annulee": "Annulée",
+            "Sans suite": "Sans suite"
+        },
+        "outcome": {
+            "": "Non renseigné",
+            "Interesse": "Intéressé",
+            "Offre": "Offre déposée",
+            "Refus": "Refus",
+            "A recontacter": "À recontacter"
+        }
+    },
+    "labels": {
+        "Create Visite": "Créer une visite"
+    }
+}

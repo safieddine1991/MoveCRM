@@ -1,0 +1,139 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "status": {
+            "type": "enum",
+            "options": ["Nouveau", "En recherche", "Visite en cours", "Offre", "Concretise", "Inactif"],
+            "default": "Nouveau",
+            "displayAsLabel": true,
+            "labelType": "state",
+            "style": {
+                "En recherche": "primary",
+                "Visite en cours": "warning",
+                "Offre": "warning",
+                "Concretise": "success",
+                "Inactif": "info"
+            },
+            "audited": true
+        },
+        "searchType": {
+            "type": "enum",
+            "options": ["Achat", "Location"],
+            "default": "Achat",
+            "audited": true
+        },
+        "budgetMin": {
+            "type": "currency",
+            "min": 0,
+            "decimal": false
+        },
+        "budgetMax": {
+            "type": "currency",
+            "min": 0,
+            "decimal": false
+        },
+        "surfaceMin": {
+            "type": "float",
+            "min": 0
+        },
+        "roomsMin": {
+            "type": "int",
+            "min": 0
+        },
+        "propertyTypes": {
+            "type": "multiEnum",
+            "options": ["Appartement", "Maison", "Terrain", "Local commercial", "Immeuble", "Parking", "Bureau", "Autre"]
+        },
+        "sectors": {
+            "type": "text",
+            "maxLength": 1000
+        },
+        "financing": {
+            "type": "enum",
+            "options": ["", "Comptant", "Credit", "A valider"],
+            "default": ""
+        },
+        "emailAddress": {
+            "type": "email"
+        },
+        "phoneNumber": {
+            "type": "phone"
+        },
+        "description": {
+            "type": "text"
+        },
+        "visits": {
+            "type": "linkMultiple",
+            "readOnly": true,
+            "noLoad": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "visits": {
+            "type": "hasMany",
+            "entity": "Visite",
+            "foreign": "acquereur"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "status": {
+            "columns": ["status", "deleted"]
+        },
+        "assignedUser": {
+            "columns": ["assignedUserId", "deleted"]
+        }
+    }
+}

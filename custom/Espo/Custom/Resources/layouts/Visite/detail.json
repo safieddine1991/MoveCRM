@@ -1,0 +1,17 @@
+[
+    {
+        "label": "Visite",
+        "rows": [
+            [{"name": "name"}, {"name": "status"}],
+            [{"name": "dateStart"}, {"name": "dateEnd"}],
+            [{"name": "bien"}, {"name": "acquereur"}],
+            [{"name": "assignedUser"}, {"name": "outcome"}]
+        ]
+    },
+    {
+        "label": "Compte rendu",
+        "rows": [
+            [{"name": "feedback"}, false]
+        ]
+    }
+]

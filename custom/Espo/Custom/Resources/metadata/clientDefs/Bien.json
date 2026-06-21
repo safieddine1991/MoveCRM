@@ -1,0 +1,6 @@
+{
+    "controller": "controllers/record",
+    "kanbanViewMode": true,
+    "color": "#4f9d69",
+    "iconClass": "fas fa-building"
+}

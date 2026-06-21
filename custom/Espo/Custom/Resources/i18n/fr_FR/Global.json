@@ -1,0 +1,16 @@
+{
+    "scopeNames": {
+        "Bien": "Bien",
+        "Mandat": "Mandat",
+        "Proprietaire": "Propriétaire",
+        "Acquereur": "Acquéreur",
+        "Visite": "Visite"
+    },
+    "scopeNamesPlural": {
+        "Bien": "Biens",
+        "Mandat": "Mandats",
+        "Proprietaire": "Propriétaires",
+        "Acquereur": "Acquéreurs",
+        "Visite": "Visites"
+    }
+}

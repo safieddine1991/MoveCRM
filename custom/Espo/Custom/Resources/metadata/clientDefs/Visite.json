@@ -1,0 +1,6 @@
+{
+    "controller": "controllers/record",
+    "kanbanViewMode": true,
+    "color": "#e67e22",
+    "iconClass": "fas fa-calendar-check"
+}

@@ -1,0 +1,6 @@
+{
+    "controller": "controllers/record",
+    "kanbanViewMode": true,
+    "color": "#c7913b",
+    "iconClass": "fas fa-file-signature"
+}

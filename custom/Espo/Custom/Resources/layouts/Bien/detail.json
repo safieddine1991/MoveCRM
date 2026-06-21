@@ -1,0 +1,41 @@
+[
+    {
+        "label": "Aperçu",
+        "rows": [
+            [{"name": "name"}, {"name": "reference"}],
+            [{"name": "propertyType"}, {"name": "transactionType"}],
+            [{"name": "status"}, {"name": "assignedUser"}],
+            [{"name": "proprietaire"}, false]
+        ]
+    },
+    {
+        "label": "Prix & honoraires",
+        "rows": [
+            [{"name": "price"}, {"name": "rent"}],
+            [{"name": "charges"}, {"name": "fees"}]
+        ]
+    },
+    {
+        "label": "Caractéristiques",
+        "rows": [
+            [{"name": "surface"}, {"name": "landSurface"}],
+            [{"name": "rooms"}, {"name": "bedrooms"}],
+            [{"name": "floor"}, {"name": "yearBuilt"}],
+            [{"name": "furnished"}, false],
+            [{"name": "dpe"}, {"name": "ges"}]
+        ]
+    },
+    {
+        "label": "Localisation",
+        "rows": [
+            [{"name": "address"}, false]
+        ]
+    },
+    {
+        "label": "Description",
+        "rows": [
+            [{"name": "description"}, false],
+            [{"name": "photos"}, false]
+        ]
+    }
+]

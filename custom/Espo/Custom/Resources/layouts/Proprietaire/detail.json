@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Contact",
+        "rows": [
+            [{"name": "name"}, {"name": "personType"}],
+            [{"name": "phoneNumber"}, {"name": "emailAddress"}],
+            [{"name": "assignedUser"}, false]
+        ]
+    },
+    {
+        "label": "Adresse",
+        "rows": [
+            [{"name": "address"}, false]
+        ]
+    },
+    {
+        "label": "Notes",
+        "rows": [
+            [{"name": "description"}, false]
+        ]
+    }
+]

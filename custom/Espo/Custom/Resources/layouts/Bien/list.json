@@ -1,0 +1,9 @@
+[
+    {"name": "name", "link": true, "width": 25},
+    {"name": "propertyType", "width": 12},
+    {"name": "transactionType", "width": 10},
+    {"name": "status", "width": 13},
+    {"name": "price", "align": "right", "width": 12},
+    {"name": "surface", "align": "right", "width": 8},
+    {"name": "assignedUser", "width": 12}
+]

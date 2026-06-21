@@ -1,0 +1,6 @@
+{
+    "controller": "controllers/record",
+    "kanbanViewMode": false,
+    "color": "#5b8def",
+    "iconClass": "fas fa-user-tie"
+}

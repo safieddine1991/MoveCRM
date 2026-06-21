@@ -1,0 +1,23 @@
+[
+    {
+        "label": "Mandat",
+        "rows": [
+            [{"name": "name"}, {"name": "mandateType"}],
+            [{"name": "status"}, {"name": "assignedUser"}],
+            [{"name": "bien"}, {"name": "proprietaire"}]
+        ]
+    },
+    {
+        "label": "Durée & commission",
+        "rows": [
+            [{"name": "startDate"}, {"name": "endDate"}],
+            [{"name": "commissionRate"}, {"name": "commissionAmount"}]
+        ]
+    },
+    {
+        "label": "Notes",
+        "rows": [
+            [{"name": "description"}, false]
+        ]
+    }
+]

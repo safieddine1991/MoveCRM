@@ -1,0 +1,8 @@
+[
+    {"name": "name", "link": true, "width": 22},
+    {"name": "status", "width": 13},
+    {"name": "searchType", "width": 10},
+    {"name": "budgetMax", "align": "right", "width": 13},
+    {"name": "phoneNumber", "width": 16},
+    {"name": "assignedUser", "width": 14}
+]

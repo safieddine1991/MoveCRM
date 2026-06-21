@@ -25,6 +25,10 @@
 /custom/Espo/Modules/*
 !/custom/Espo/Custom/.htaccess
 !/custom/Espo/Modules/.htaccess
+
+# MoveCRM: track the real-estate customization layer (versioned product code)
+!/custom/Espo/Custom/Resources/
+!/custom/Espo/Custom/Resources/**
 /install/config.php
 
 client/css/espo/*
