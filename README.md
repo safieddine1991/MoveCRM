@@ -1,10 +1,20 @@
-# MoveCRM
+<p align="center">
+  <img src="brand/movecrm-logo.png" alt="MoveCRM" width="320">
+</p>
 
-**Un CRM open-source gratuit pour les agences immobilières françaises.**
+<h1 align="center">MoveCRM</h1>
+
+<p align="center"><strong>Un CRM open-source gratuit pour les agences immobilières françaises.</strong></p>
 
 MoveCRM équipe les agences immobilières d'un CRM puissant, gratuit et auto-hébergeable :
 gestion des biens (mandats vente/location), propriétaires, acquéreurs et locataires,
 visites, et suivi du pipeline commercial de la prospection jusqu'à l'acte.
+
+<p align="center">
+  <img src="brand/screenshot-fiche-bien.png" alt="Fiche d'un bien dans MoveCRM" width="100%">
+  <br>
+  <em>Fiche bien : photos, caractéristiques, prix & honoraires, statut du mandat.</em>
+</p>
 
 > ⚖️ **MoveCRM est un dérivé d'[EspoCRM](https://www.espocrm.com)** (AGPL-3.0), adapté au
 > métier de l'immobilier en France. Voir [`NOTICE.md`](NOTICE.md) pour l'attribution
