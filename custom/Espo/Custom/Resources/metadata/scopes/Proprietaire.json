@@ -10,5 +10,5 @@
     "layouts": true,
     "acl": true,
     "aclPortal": true,
-    "type": "Person"
+    "type": "Base"
 }

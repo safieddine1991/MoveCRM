@@ -29,6 +29,14 @@
 # MoveCRM: track the real-estate customization layer (versioned product code)
 !/custom/Espo/Custom/Resources/
 !/custom/Espo/Custom/Resources/**
+!/custom/Espo/Custom/Entities/
+!/custom/Espo/Custom/Entities/**
+!/custom/Espo/Custom/Controllers/
+!/custom/Espo/Custom/Controllers/**
+!/custom/Espo/Custom/Services/
+!/custom/Espo/Custom/Services/**
+!/custom/Espo/Custom/Repositories/
+!/custom/Espo/Custom/Repositories/**
 /install/config.php
 
 client/css/espo/*
@@ -37,3 +45,6 @@ client/modules/crm/lib/*
 
 # MoveCRM secrets
 /.env
+
+# MoveCRM: assets de démo locaux
+/.movecrm-demo/

@@ -11,5 +11,5 @@
     "acl": true,
     "aclPortal": true,
     "statusField": "status",
-    "type": "Person"
+    "type": "Base"
 }
